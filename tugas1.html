@@ -1,79 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Saya</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <table width="100%" border="1">
-    <tr>
-      <td>Brand</td>
-      <td align="right">
-        <a href="#">Header</a> |
-        <a href="#">Biodata</a> |
-        <a href="#">Portofolio</a>
-      </td>
-    </tr>
-  </table>
+  <header class="navbar">
+    <div class="brand">Brand</div>
+    <nav>
+      <a href="#header">Header</a>
+      <a href="#about">Biodata</a>
+      <a href="#portfolio">Portofolio</a>
+    </nav>
+  </header>
 
-  <!-- Header -->
-  <table width="100%" border="1">
-    <tr>
-      <td width="50%" valign="top">
-        <h3>Selamat Datang di Website Saya</h3>
-        <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-        <button>Pelajari lebih lanjut</button>
-      </td>
-      <td width="50%">
-        <img src="https://via.placeholder.com/600x400" alt="Gambar Header">
-      </td>
-    </tr>
-  </table>
+  <!-- Header Section -->
+  <section class="header-section" id="header">
+    <div class="header-text">
+      <h2>Selamat Datang di Website Saya</h2>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <a href="#">Pelajari Lebih Lanjut</a>
+    </div>
+    <div class="header-image">
+      <img src="./assets/logo.png" alt="Gambar Header">
+    </div>
+  </section>
 
-  <!-- About Me -->
-  <center>
+  <!-- About Section -->
+  <section class="about-section" id="about">
     <h2>About Me</h2>
-    <p>A brief introduction about myself</p>
-  </center>
+    <p class="subtitle">A brief introduction about myself</p>
+    <div class="grid biodata">
+      <div>Full Name</div>
+      <div>Education</div>
+      <div>Pekerjaan</div>
+      <div>Contact</div>
+      <div>Hobi</div>
+      <div>Alamat</div>
+    </div>
+  </section>
 
-  <table width="100%" border="1">
-    <tr>
-      <td align="center">Full Name</td>
-      <td align="center">Education</td>
-      <td align="center">Pekerjaan</td>
-    </tr>
-    <tr>
-      <td align="center">Contact</td>
-      <td align="center">Hobi</td>
-      <td align="center">Alamat</td>
-    </tr>
-  </table>
-
-  <!-- Portfolio -->
-  <center>
+  <!-- Portfolio Section -->
+  <section class="portfolio-section" id="portfolio">
     <h2>Portofolio</h2>
-  </center>
-
-  <table width="100%" border="1">
-    <tr>
-      <td align="center">
-        <img src="https://via.placeholder.com/350x200" alt="Proyek 1"><br>
-        <b>Proyek 1</b><br>
-        Deskripsi proyek 1.
-      </td>
-      <td align="center">
-        <img src="https://via.placeholder.com/350x200" alt="Proyek 2"><br>
-        <b>Proyek 2</b><br>
-        Deskripsi proyek 2.
-      </td>
-      <td align="center">
-        <img src="https://via.placeholder.com/350x200" alt="Proyek 3"><br>
-        <b>Proyek 3</b><br>
-        Deskripsi proyek 3.
-      </td>
-    </tr>
-  </table>
+    <div class="grid portfolio">
+      <div class="card">
+      <img src="./assets/logo.png" alt="Gambar Header">
+        <h3>Proyek 1</h3>
+        <p>Deskripsi proyek 1.</p>
+      </div>
+      <div class="card">
+      <img src="./assets/logo.png" alt="Gambar Header">
+        <h3>Proyek 2</h3>
+        <p>Deskripsi proyek 2.</p>
+      </div>
+      <div class="card">
+      <img src="./assets/logo.png" alt="Gambar Header">
+        <h3>Proyek 3</h3>
+        <p>Deskripsi proyek 3.</p>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
