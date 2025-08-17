@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+/* Container Filter */
+#filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 1px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Gaya untuk tombol filter yang aktif */
+.filter-btn.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Grid untuk Produk */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar kartu */
+    justify-content: center;
+}
+
+/* Gaya Kartu Produk */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #777;
+}
